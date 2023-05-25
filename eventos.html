@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Eventos</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			
+			
+			<a href="index.html"><img src="home.png" class="imgicon"/></a>
+			<div>
+			<img src="logo.png" class="logo" />
+			</div>
+		
+			<input type="text"/>
+			<a href="pesquisa.html"> <button type="submit" class="search-btn"><span class="icon icon-search"></span></button></a>
+			<a href="login.html"><img src="perfil.png" class="perfil"/></a>
+		</header>	
+		<header class="header">
+		<b> <nav >
+		<ul>
+		<li><a href="cursos.html">Cursos</a></li>
+		<li><a href="corpodocente.html">Corpo docente</a></li>
+		<li><a href="eventos.html">Eventos</a></li>
+		<li><a href="servicos.html">Serviços</a></li>
+		<li><a href="contatos.html">Contatos</a></li>
+		</ul>
+		</header> </b>
+		<p class="escrita">Acompanhe o calendário de eventos de nossa unidade</p>
+		<meta charset='utf-8' />
+<script src='index.global.js'></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+      },
+      initialDate: '2023-04-01',
+      navLinks: true, 
+      businessHours: true, 
+      editable: true,
+      selectable: true,
+      events: [
+        {
+          title: 'SIPAT - Matutino',
+          start: '2023-03-13',
+          end: '2023-03-18',
+		  constraint: 'availableForMeeting',
+		  color: '#015bac'
+        },
+		{
+          title: 'SIPAT - Vespertino',
+          start: '2023-03-27',
+          end: '2023-03-32',
+		  constraint: 'availableForMeeting',
+		  color: '#015bac'
+        },
+		{
+          title: 'Volta as aulas',
+          start: '2023-01-16',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+		{
+          title: 'Início das férias',
+          start: '2022-12-23',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+		{
+          title: 'Visita a UFLA',
+          start: '2022-12-06',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+		{
+          title: 'Visita a UFLA',
+          start: '2022-12-08',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+		{
+          title: 'Apresentação do Trabalho de Conclusão de Curso - Controle de Qualidade',
+          start: '2023-03-17',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+		{
+          title: 'Aniversário da Daiane',
+          start: '2023-04-20',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+		{
+          title: 'Aniversário do Emerson',
+          start: '2023-04-22',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+		{
+          title: 'Aniversário do Eduardo',
+          start: '2023-04-29',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+		{
+          title: 'Fórum Políticas Públicas sobre drogas - Matutino',
+          start: '2023-03-21',
+		  constraint: 'availableForMeeting',
+          color: '#015bac'
+        },
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+  <div id='calendar'></div>
+  
+  <div class="titulos"><h1>Eventos</h1></div>
+  <p class="escrita"> Alguns dos eventos que aconteceram em nossa unidade</p>
+  <br>
+  <nav>
+   <section>
+	<img src="sipat.jpg" class="sipatimg">
+	<h2 class="h2">SIPAT - Semana Interna de Prevenção de Acidentes </h2>
+   </section>
+     <section>
+	<img src="forum.jpg" class="forumimg">
+	<h2 class="h2">Visita ao Fórum Políticas Públicas sobre drogas </h2>
+   </section>
+     <section>
+	<img src="90anos.jpg" class="fiemg">
+	<h2 class="h2">Aniversário de 90 anos da FIEMG </h2>
+   </section>
+   </nav>
+   <br><br><br>
+   <footer>
+	
+	<nav class="navEsquerda">
+		
+		<img src="logorodape.png" class="fiemg" >
+	</nav>
+	<nav class="navCentro">
+				<h4 class="letras">Endereço:</h4>
+				Avenida Tenente José Joaquim, 1512 - Vila Helena<br>São Sebastião do Paraíso/MG - CEP:37950-000
+				<h4 class="letras">Telefone:</h4>
+				(35) 3558-1365
+				<h4 class="letras">E-mail:</h4>
+				senaissparaiso@fiemg.com.br
+				<h4 class="letras">Horário de Atendimento:</h4>
+				Segunda a sexta-feira das 8h às 22h
+		
+	</nav>
+	<nav class="navDireita">
+		<ul class="rodape">
+			<li class="rodape2"><h4 class="letras">Acompanhe o SENAI</h4></li>
+			<li class="rodape2"><a href="https://www.facebook.com/senaissparaisocfpmjm/?locale=pt_BR"><img src="facebook2.png" width="30px" height="30px"></a></li>
+			<li class="rodape2"><a href="https://twitter.com/senaimg"><img src="twitter2.png" width="30px" height="30px"></a></li>
+			<li class="rodape2"><a href="https://www.instagram.com/senaissparaiso/"><img src="instagram2.png" width="30px" height="30px"></a></li>
+		</ul>
+	</nav> 
+	
+	</footer>
+	</body>
+</html>
